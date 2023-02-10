@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "style-watch.css">
+    <link rel="stylesheet" href= "home.html">
+    <link rel="stylesheet" href= "airpods.html">
+    <link rel="stylesheet" href= "ipad.html">
+
+    <title>Apple Watch</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#"><img src="logo.png" alt="logo do iphone" class="logo"></a>
+            <ul>
+                <li><a href="#">Mac</a></li>
+                <li><a href="ipad.html">iPad</a></li>
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="watch.html" class="check">Watch</a></li>
+                <li><a href="airpods.html">AirPods</a></li>
+                <li><a href="#">Só na Apple</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <main>
+    <section>
+        <div class="circle">
+
+        </div>
+        <div class="main-text">
+            <img src="loogo-black.png" class="logo-black" alt="">
+            <h3>Um grande salto para sua saúde. <br>
+                Com uma boa dose de estilo.</h3>
+            <p>A caixa de alumínio é leve e feita com uma liga de alumínio aeroespacial 100% reciclado. <br>
+                <br>
+                A pulseira esportiva é feita de fluorelastômero resistente e <br> surpreendentemente macio e vem com um fecho inovador, em forma de <br> pino. <br></p>
+                <h6>A partir de R$5.299</h6>
+                <a href="#" class="btn">Comprar</a>
+                <div class="text">
+                  <h5>Escolha sua cor favorita:</h5>
+                </div>
+                <div class="content">
+                    <span id="black" onclick="imgSlider('watch-black.png'); circleChange('#444')"></span>
+                    <span id="orange" onclick="imgSlider('watch-orange.png'); circleChange('#ffa690')"></span>
+                    <span id="white" onclick="imgSlider('watch-white.png'); circleChange('#fbdfc9')"></span>
+                </div>
+            </div>
+             <div class="main-img">
+                <img src="watch-black.png" alt="imagem do Watch" id="phone">
+             </div>
+    </section>
+   </main> 
+
+   <script type="text/javascript">
+    /*funcao de mudar celular*/
+    function imgSlider(e){
+        document.querySelector('#phone').src = e;
+    }
+
+    /*funcao de mudar cor do circulo*/
+    function circleChange (color){
+        const circle= document.querySelector ('.circle');
+        circle.style.background = color; 
+    }
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href= "home.html">
+    <link rel="stylesheet" href= "airpods.css">
+    <link rel="stylesheet" href= "ipad.html">
+
+    <title>AirPods</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#"><img src="logo.png" alt="logo do iphone" class="logo"></a>
+            <ul>
+                <li><a href="#">Mac</a></li>
+                <li><a href="ipad.html">iPad</a></li>
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="watch.html">Watch</a></li>
+                <li><a href="airpods.html" class="check">AirPods</a></li>
+                <li><a href="#">Só na Apple</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <main>
+    <section>
+        <div class="circle">
+
+        </div>
+        <div class="main-text">
+            <img src="airpods-logo.png" class="logo-black" alt="">
+            <h3>Desempenho que dá gosto <br>de ouvir.</h3>
+            <p>Os AirPods se conectam na hora, e o som alterna automaticamente entre seu<br> iPhone, Apple Watch, Mac, iPad e Apple TV. Configuração fácil,<br> resultados mágicos. <br>
+                </p>
+                <h6>A partir de R$1.399</h6>
+                <a href="#" class="btn">Comprar</a>
+                <div class="text">
+                  <h5>Escolha sua cor favorita:</h5>
+                </div>
+                <div class="content">
+                    <span id="white" onclick="imgSlider('airpods.png'); circleChange('#fff')"></span>
+                </div>
+            </div>
+             <div class="main-img">
+                <img src="airpods.png" alt="imagem do airpods" id="phone">
+             </div>
+    </section>
+   </main> 
+
+   <script type="text/javascript">
+    /*funcao de mudar celular*/
+    function imgSlider(e){
+        document.querySelector('#phone').src = e;
+    }
+
+    /*funcao de mudar cor do circulo*/
+    function circleChange (color){
+        const circle= document.querySelector ('.circle');
+        circle.style.background = color; 
+    }
+
+   </script>
+</body>
+</html>
